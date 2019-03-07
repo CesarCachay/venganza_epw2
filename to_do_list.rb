@@ -27,6 +27,10 @@ class ToDo
   def delete(pos)
     #CESAR
     #Reemplaza un elemento de @task_list con ""
+    # todo_del = task_list.gsub(/@borrado/,"")
+    # todo
+    @task_list[pos] = ""
+    list
   end
 end
 
