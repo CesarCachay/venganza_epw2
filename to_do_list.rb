@@ -1,6 +1,12 @@
 class ToDo
   def initialize
-    @task_list = ["Hola", "Soy", "Una", "Lista", "Rara"]
+    @task_list = [
+      "Hola",
+      "Soy",
+      "Una",
+      "Lista",
+      "Rara"
+    ]
   end
 
   def list
