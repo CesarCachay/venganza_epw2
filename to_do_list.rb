@@ -1,11 +1,20 @@
 class ToDo
   def initialize
-    @task_list = []
+    @task_list = [
+      "Hola",
+      "Soy",
+      "Una",
+      "Lista",
+      "Rara"
+    ]
   end
 
   def list
     #PAULO
     #Lista elementos de @task_list
+    @task_list.each_with_index do |task , id|
+      puts "#{id + 1} - #{task}"
+    end
   end
 
   def add(task)
@@ -24,3 +33,6 @@ def input(user_input)
   #LIAN
   #Retorna un arreglo ["acccion", "argumento"]
 end
+
+task = ToDo.new()
+task.list
