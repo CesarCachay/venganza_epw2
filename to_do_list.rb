@@ -4,6 +4,7 @@ class ToDo
       "Hola",
       "Soy",
       "Una",
+      "",
       "Lista",
       "Rara"
     ]
@@ -13,7 +14,7 @@ class ToDo
     #PAULO
     #Lista elementos de @task_list
     @task_list.each_with_index do |task , id|
-      puts "#{id + 1} - #{task}"
+      puts "#{id + 1} - #{task}" if task != ""
     end
   end
 
