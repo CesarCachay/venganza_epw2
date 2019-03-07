@@ -11,6 +11,7 @@ class ToDo
   def add(task)
     #DIEGO
     #Agrega elementos a @task_list
+    @task_list << task
   end
 
   def delete(pos)
