@@ -33,7 +33,24 @@ end
 def input(user_input)
   #LIAN
   #Retorna un arreglo ["acccion", "argumento"]
-end
+  if !!(user_input =~ /^t$/) 
+    return ["list",""]
+  elsif !!(user_input =~ /^t\s[a-zA-Z0-9]+/)
+    user_input[0..1] = ""
+    return ["add",user_input]
+  elsif !!(user_input =~ /^t\s-d\s\d+/)
+    user_input[0..4] = ""
+    return ["delete",user_input.to_i]
+  elsif !!(user_input =~ /^q$/)
+    exit 
+  else
+    return "Error: Unexpected input"
+  end
+end 
+
+
+
 
 task = ToDo.new()
-task.list
+a = gets.chomp 
+puts input(a)
